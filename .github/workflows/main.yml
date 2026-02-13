@@ -37,8 +37,10 @@ jobs:
           wget https://raw.githubusercontent.com/rahmatsobrian/fogostestv2/main/build.sh -O kernel/build.sh
           chmod +x kernel/build.sh
 
+      # ✅ FIXED: Toolchain sekarang masuk ke folder kernel
       - name: Setup ZYC Clang
         run: |
+          cd kernel
           mkdir -p clang-zyc
           cd clang-zyc
           wget -q $(curl -k https://raw.githubusercontent.com/ZyCromerZ/Clang/main/Clang-16-link.txt) -O zyc-clang.tar.gz
