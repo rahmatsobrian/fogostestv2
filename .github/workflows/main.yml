@@ -34,7 +34,7 @@ jobs:
 
       - name: Download External build.sh
         run: |
-          wget https://raw.githubusercontent.com/rahmatsobrian/android_kernel_sm6375/main/build.sh -O kernel/build.sh
+          wget https://raw.githubusercontent.com/rahmatsobrian/fogostestv2/main/build.sh -O kernel/build.sh
           chmod +x kernel/build.sh
 
       - name: Setup ZYC Clang
