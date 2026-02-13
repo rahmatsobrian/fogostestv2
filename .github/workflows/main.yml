@@ -30,8 +30,7 @@ jobs:
 
       - name: Clone Kernel Source
         run: |
-          git clone https://github.com/Motorola-SM6375-Devs/android_kernel_motorola_sm6375.git kernel
-          #https://github.com/SushiKernel/android_kernel_motorola_fogos.git
+          git clone https://github.com/SushiKernel/android_kernel_motorola_fogos.git kernel
 
       - name: Download External build.sh
         run: |
